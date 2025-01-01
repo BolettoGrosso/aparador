@@ -9,7 +9,7 @@ sheet_url = 'https://docs.google.com/spreadsheets/d/1Hu2Rl6QE6-Fd_MeP2M4Ffb6Xzcm
 def load_data():
     data = pd.read_csv(sheet_url)
     # Debugging: Show all columns to identify the correct names
-    st.write("Columns in dataset:", data.columns.tolist())
+    #st.write("Columns in dataset:", data.columns.tolist())
     # Replace these with the correct column names based on the output above
     columns_to_display = ["Identificador", "Fecha de conclusión", "Valor subasta", "Provincia_lot'"]  # Replace with real names
     data = data[columns_to_display]
@@ -17,7 +17,7 @@ def load_data():
 
 # Load the dataset
 st.title('Subastas disponibles')
-# data = load_data()
+data = load_data()
 
 # Sorting options
 #sort_column = st.selectbox("Sort by:", data.columns)
