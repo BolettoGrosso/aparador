@@ -16,8 +16,8 @@ def load_data():
     return data
 
 # Load the dataset
-st.title('Google Sheets Data Viewer')
-data = load_data()
+st.title('Subastas disponibles')
+# data = load_data()
 
 # Sorting options
 #sort_column = st.selectbox("Sort by:", data.columns)
